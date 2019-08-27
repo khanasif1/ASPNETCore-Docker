@@ -2,7 +2,7 @@
 
 ######################CLIENT API DEPLOYMENT###################################
 
-cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.client.user
+cd {local path}\k8.docker.app.client.user
 docker build -t k8_client_user:release .
 docker run -d -p 8080:5001  --name userclient k8_client_user:release
 Start-Process "http://localhost:8080/swagger"
@@ -10,7 +10,7 @@ Start-Process "http://localhost:8080/swagger"
 ###########################################################################
 ######################Server API DEPLOYMENT################################
 
-cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user
+cd {local path}\k8.docker.app.server.user
 docker build -t k8_server_user:release .
 docker run -d -p 8081:5002  --name userserver k8_server_user:release
 Start-Process "http://localhost:8081/swagger"
