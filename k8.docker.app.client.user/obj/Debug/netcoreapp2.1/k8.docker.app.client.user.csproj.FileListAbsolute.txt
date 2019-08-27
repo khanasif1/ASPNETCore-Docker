@@ -1,0 +1,13 @@
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.csproj.CoreCompileInputs.cache
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.RazorAssemblyInfo.cache
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.RazorAssemblyInfo.cs
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.AssemblyInfoInputs.cache
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.AssemblyInfo.cs
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\bin\Debug\netcoreapp2.1\k8.docker.app.client.user.deps.json
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\bin\Debug\netcoreapp2.1\k8.docker.app.client.user.runtimeconfig.json
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\bin\Debug\netcoreapp2.1\k8.docker.app.client.user.runtimeconfig.dev.json
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\bin\Debug\netcoreapp2.1\k8.docker.app.client.user.dll
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\bin\Debug\netcoreapp2.1\k8.docker.app.client.user.pdb
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.RazorTargetAssemblyInfo.cache
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.dll
+C:\_dev\_code\k8.docker\k8.docker.app.client.user\obj\Debug\netcoreapp2.1\k8.docker.app.client.user.pdb

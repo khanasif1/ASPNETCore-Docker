@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\_dev\\_code\\_github\\aspnetcore_docker\\k8.docker.app.client.user\\k8.docker.app.client.user.csproj": {}
+  },
+  "projects": {
+    "C:\\_dev\\_code\\_github\\aspnetcore_docker\\k8.docker.app.client.user\\k8.docker.app.client.user.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_dev\\_code\\_github\\aspnetcore_docker\\k8.docker.app.client.user\\k8.docker.app.client.user.csproj",
+        "projectName": "k8.docker.app.client.user",
+        "projectPath": "C:\\_dev\\_code\\_github\\aspnetcore_docker\\k8.docker.app.client.user\\k8.docker.app.client.user.csproj",
+        "packagesPath": "C:\\Users\\Khanasif1\\.nuget\\packages\\",
+        "outputPath": "C:\\_dev\\_code\\_github\\aspnetcore_docker\\k8.docker.app.client.user\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Khanasif1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.4.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
