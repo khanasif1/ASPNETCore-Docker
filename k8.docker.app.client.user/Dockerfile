@@ -4,9 +4,9 @@ EXPOSE 80
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY k8.docker.app.client.user.csproj www/
+COPY k8.docker.app.client.user.csproj www/client/
 RUN dotnet restore www/k8.docker.app.client.user.csproj
-WORKDIR /src/www
+WORKDIR /src/www/client
 COPY . .
 RUN dotnet build k8.docker.app.client.user.csproj -c Release -o /app
 
