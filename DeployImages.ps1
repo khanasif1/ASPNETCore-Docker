@@ -48,7 +48,7 @@ docker inspect  ac30e3747d59
 
 docker exec -it userclient /bin/bash
 
-docker login -u=khanasif1 -p=Redhat0!
+docker login -u=$$$$$ -p=$$$$$
     
 docker tag k8_client_user:release khanasif1/k8_client_user:rc1
 
