@@ -5,6 +5,7 @@ Project contains 2 core projecs:
 
 * k8.docker.app.client.user
 * k8.docker.app.server.user
+
 Both the projects are APNET Core WebAPI projects. While setting the project I enabled docker setup for Linus OS for the project as a part of Visual Studio project creation.
 
 ## Run the Project
