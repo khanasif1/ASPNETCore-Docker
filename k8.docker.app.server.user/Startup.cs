@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
-//Testing gitdfdfdff
+//Testing gitdfdfdffdfdf
 namespace k8.docker.app.server.user
 {
     public class Startup
