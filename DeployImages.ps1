@@ -2,7 +2,7 @@
 
 ######################CLIENT API DEPLOYMENT###################################
 
-cd {local path}\k8.docker.app.client.user
+cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.client.user
 docker build -t k8_client_user:release .
 docker run -d -p 8080:5001  --name userclient k8_client_user:release
 Start-Process "http://localhost:8080/swagger"
@@ -10,7 +10,7 @@ Start-Process "http://localhost:8080/swagger"
 ###########################################################################
 ######################Server API DEPLOYMENT################################
 
-cd {local path}\k8.docker.app.server.user
+cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user
 docker build -t k8_server_user:release .
 docker run -d -p 8081:5002  --name userserver k8_server_user:release
 Start-Process "http://localhost:8081/swagger"
@@ -48,7 +48,7 @@ docker inspect  ac30e3747d59
 
 docker exec -it userclient /bin/bash
 
-docker login -u=khanasif1 -p=Redhat0!
+docker login -u=$$$$$ -p=$$$$$
     
 docker tag k8_client_user:release khanasif1/k8_client_user:rc1
 
