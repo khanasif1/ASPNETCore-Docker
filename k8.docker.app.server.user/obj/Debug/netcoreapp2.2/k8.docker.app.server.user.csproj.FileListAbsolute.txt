@@ -40,3 +40,17 @@ C:\_dev\_code\_github\_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\
 C:\_dev\_code\_github\_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.RazorTargetAssemblyInfo.cache
 C:\_dev\_code\_github\_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.dll
 C:\_dev\_code\_github\_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.pdb
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\bin\Debug\netcoreapp2.2\k8.docker.app.server.user.deps.json
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\bin\Debug\netcoreapp2.2\k8.docker.app.server.user.runtimeconfig.json
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\bin\Debug\netcoreapp2.2\k8.docker.app.server.user.runtimeconfig.dev.json
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\bin\Debug\netcoreapp2.2\k8.docker.app.server.user.dll
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\bin\Debug\netcoreapp2.2\k8.docker.app.server.user.pdb
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.csprojAssemblyReference.cache
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.csproj.CoreCompileInputs.cache
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.RazorAssemblyInfo.cache
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.RazorAssemblyInfo.cs
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.AssemblyInfoInputs.cache
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.AssemblyInfo.cs
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.RazorTargetAssemblyInfo.cache
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.dll
+C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user\obj\Debug\netcoreapp2.2\k8.docker.app.server.user.pdb
