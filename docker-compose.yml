@@ -5,18 +5,21 @@ services:
     build:
       context: ./k8.docker.app.server.user
       dockerfile: Dockerfile
-    image: k8_server_user:rc1
+    image: k8_server_user:rc2.5
     ports :
     - "8081:5002"
+    environment:      
+      APP_VERSION: V2.5
   api-client:    
     build: 
       context: ./k8.docker.app.client.user
       dockerfile: Dockerfile
-    image: k8_client_user:rc2
+    image: k8_client_user:rc2.5
     ports :
       - "8080:5001"
     environment:
-      Server_URI: "http://api-server:5002/" 
+      Server_URI: "http://api-server:5002/"
+      APP_VERSION: V2.5
     depends_on:
       - api-server 
 

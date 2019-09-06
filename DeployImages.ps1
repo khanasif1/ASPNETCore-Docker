@@ -17,21 +17,21 @@ Start-Process "http://localhost:8081/swagger"
 ###########################################################################
 ########################Push Docker Hub####################################
 docker login -u=khanasif1 -p=Redhat0!
-docker tag k8_client_user:rc2 khanasif1/k8_client_user:rc2
-docker push khanasif1/k8_client_user:rc2
+docker tag k8_client_user:rc2.5 khanasif1/k8_client_user:rc2.5
+docker push khanasif1/k8_client_user:rc2.5
 
 
 docker login -u=khanasif1 -p=Redhat0!
-docker tag k8_server_user:rc1 khanasif1/k8_server_user:rc1
-docker push khanasif1/k8_server_user:rc1
+docker tag k8_server_user:rc2.5 khanasif1/k8_server_user:rc2.5
+docker push khanasif1/k8_server_user:rc2.5
 #########################General Script######################################
 docker ps -a            #get all containers
 docker images -a        #get all images
 
 docker stop $(docker ps -a -q)         # stop all containers
 docker rm $(docker ps -a -q) -f        # remove all containers
-docker rmi k8_server_user:rc1 -f
-docker rmi k8_client_user:rc2 -f
+docker rmi k8_server_user:rc2.5 -f
+docker rmi k8_client_user:rc2.5 -f
 
 docker rmi $(docker images -a -q) -f   # remove all images
 
@@ -40,7 +40,7 @@ docker rmi $(docker images -a -q) -f   # remove all images
 cd C:\_dev\_code\_github\aspnetcore_docker
 docker-compose build
 
-docker-compose up -d
+docker-compose up --build -d
 Start-Process "http://localhost:8080/swagger"
 Start-Process "http://localhost:8081/swagger"
 

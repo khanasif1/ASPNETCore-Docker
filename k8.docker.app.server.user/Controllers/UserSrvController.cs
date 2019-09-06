@@ -11,11 +11,14 @@ namespace k8.docker.app.server.user.Controllers
     public class UserSrvController : ControllerBase
     {
         // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        // GET api/values
+        [HttpGet("api/GetAppVersion")]
+        public ActionResult<string> Get()
         {
-            return new string[] { "!!!!!Response from server!!!!!" };
+            string appVersion = Environment.GetEnvironmentVariable("APP_VERSION");
+            return string.Concat("APP_VERSION : ", appVersion);
         }
+
 
         [HttpGet("GetServerClient")]
         public ActionResult<string> GetServerClient()

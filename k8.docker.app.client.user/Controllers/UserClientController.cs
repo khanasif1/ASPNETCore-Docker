@@ -10,19 +10,19 @@ namespace k8.docker.app.client.user.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class UserClientController : ControllerBase
-    {
+    {        
         // GET api/values
-
-        [HttpGet()]
-        public ActionResult<IEnumerable<string>> Get()
+        [HttpGet("api/GetAppVersion")]
+        public ActionResult<string> Get()
         {
-            return new string[] { "!!!!!Response from client!!!!!" };
+            string appVersion = Environment.GetEnvironmentVariable("APP_VERSION");
+            return string.Concat("APP_VERSION : ", appVersion);
         }
         // GET api/serverdata
         [HttpGet("api/GetServerMessage")]
         public async Task<string> GetServerMessage()
         {
-            string baseUrl =Environment.GetEnvironmentVariable("Server_URI");
+            string baseUrl = Environment.GetEnvironmentVariable("Server_URI");
             //if (baseUrl.Equals(string.Empty))
             //    baseUrl = "http://api-server:5002/";//"http://localhost:32768/";
 
@@ -40,7 +40,7 @@ namespace k8.docker.app.client.user.Controllers
             catch (Exception ex)
             {
                 return string.Concat("Error !!!- ", ex.Message);
-            }            
+            }
         }
     }
 }
