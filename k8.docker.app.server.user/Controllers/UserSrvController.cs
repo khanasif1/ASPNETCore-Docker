@@ -15,6 +15,12 @@ namespace k8.docker.app.server.user.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "!!!!!Response from server!!!!!" };
-        }       
+        }
+
+        [HttpGet("GetServerClient")]
+        public ActionResult<string> GetServerClient()
+        {
+            return "Hi from server!!!!";
+        }
     }
 }

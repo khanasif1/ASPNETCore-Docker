@@ -3,27 +3,48 @@
 ######################CLIENT API DEPLOYMENT###################################
 
 cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.client.user
-docker build -t k8_client_user:release .
-docker run -d -p 8080:5001  --name userclient k8_client_user:release
+docker build -t k8_client_user:rc2 .
+docker run -d -p 8080:5001  --name userclient k8_client_user:rc2
 Start-Process "http://localhost:8080/swagger"
 
 ###########################################################################
 ######################Server API DEPLOYMENT################################
 
 cd C:\_dev\_code\_github\aspnetcore_docker\k8.docker.app.server.user
-docker build -t k8_server_user:release .
-docker run -d -p 8081:5002  --name userserver k8_server_user:release
+docker build -t k8_server_user:rc1 .
+docker run -d -p 8081:5002  --name userserver k8_server_user:rc1
 Start-Process "http://localhost:8081/swagger"
 ###########################################################################
-docker ps -a
-docker images -a
+########################Push Docker Hub####################################
+docker login -u=khanasif1 -p=Redhat0!
+docker tag k8_client_user:rc2 khanasif1/k8_client_user:rc2
+docker push khanasif1/k8_client_user:rc2
 
 
-docker stop $(docker ps -a -q) 
-docker rm $(docker ps -a -q) -f
-docker rmi $(docker images -a -q) -f
+docker login -u=khanasif1 -p=Redhat0!
+docker tag k8_server_user:rc1 khanasif1/k8_server_user:rc1
+docker push khanasif1/k8_server_user:rc1
+#########################General Script######################################
+docker ps -a            #get all containers
+docker images -a        #get all images
+
+docker stop $(docker ps -a -q)         # stop all containers
+docker rm $(docker ps -a -q) -f        # remove all containers
+docker rmi k8_server_user:rc1 -f
+docker rmi k8_client_user:rc2 -f
+
+docker rmi $(docker images -a -q) -f   # remove all images
 
 
+#########################Docker Compose ###################################
+cd C:\_dev\_code\_github\aspnetcore_docker
+docker-compose build
+
+docker-compose up -d
+Start-Process "http://localhost:8080/swagger"
+Start-Process "http://localhost:8081/swagger"
+
+docker-compose down
 
 ###########################################################################
 ######################### IGNORE ##########################################
@@ -44,15 +65,13 @@ docker build -f Dockerfile -t dockertest:dev --target base .
 docker run -d -p 8080:5001  --name userclient dockertest:dev
 
 docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" a356dff75862
-docker inspect  ac30e3747d59
+docker inspect  f3374ecab85a
 
 docker exec -it userclient /bin/bash
 
-docker login -u=$$$$$ -p=$$$$$
-    
-docker tag k8_client_user:release khanasif1/k8_client_user:rc1
+docker logs --follow f3374ecab85a
 
-
-docker push khanasif1/k8_client_user:rc1
-
-docker run -p 5000:5000 c418eaec17ed
+docker pull khanasif1/k8_client_user:rc2
+docker run -d -p 8080:5001  --name kahnasif1user 1b7f0ce78ce9
+docker pull khanasif1/k8_server_user:rc1
+docker run -d -p 8081:5002  --name kahnasif1server 47a3726cfa6e
