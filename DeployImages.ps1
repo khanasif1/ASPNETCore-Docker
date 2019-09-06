@@ -16,12 +16,12 @@ docker run -d -p 8081:5002  --name userserver k8_server_user:rc1
 Start-Process "http://localhost:8081/swagger"
 ###########################################################################
 ########################Push Docker Hub####################################
-docker login -u=khanasif1 -p=Redhat0!
+docker login -u=$$$$ -p=$$$$
 docker tag k8_client_user:rc2.5 khanasif1/k8_client_user:rc2.5
 docker push khanasif1/k8_client_user:rc2.5
 
 
-docker login -u=khanasif1 -p=Redhat0!
+docker login -u=$$$$ -p=$$$$
 docker tag k8_server_user:rc2.5 khanasif1/k8_server_user:rc2.5
 docker push khanasif1/k8_server_user:rc2.5
 #########################General Script######################################
