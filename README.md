@@ -16,11 +16,18 @@ Both the projects are APNET Core WebAPI projects. While setting the project I en
 
 ### Build and Run script
 ```
-######################CLIENT/Server################################################
+######################CLIENT################################################
 cd {Your local folder location}\k8.docker.app.{client/server}.user
-docker build -t k8_{client/server}_user:release .
-docker run -d -p 8080:5001  --name user{client/server} k8_{client/server}_user:release
+docker build -t k8_client_user:rc2.5 .
+docker run -d -p 8080:5001  --name userclient k8_client_user:rc2.5
 Start-Process "http://localhost:8080/swagger"
+
+######################SERVER################################################
+cd {Your local folder location}\k8.docker.app.server.user
+docker build -t k8_server_user:rc2.5 .
+docker run -d -p 8081:5002  --name userserver k8_server_user:rc2.5
+Start-Process "http://localhost:8080/swagger"
+
 ```
 ## Authors
 
