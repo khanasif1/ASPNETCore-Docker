@@ -26,7 +26,7 @@ Start-Process "http://localhost:8080/swagger"
 cd {Your local folder location}\k8.docker.app.server.user
 docker build -t k8_server_user:rc2.5 .
 docker run -d -p 8081:5002  --name userserver k8_server_user:rc2.5
-Start-Process "http://localhost:8080/swagger"
+Start-Process "http://localhost:8081/swagger"
 
 ```
 ## Authors
